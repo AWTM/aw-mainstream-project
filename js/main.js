@@ -31,9 +31,7 @@ document.addEventListener("DOMContentLoaded", function(){
 /* End Navabar autohide */
 
 document.addEventListener('DOMContentLoaded', () => {
-    const options = {
-      fullscreen: {iosNative: true},
-      controls = [
+    const controls = [
         'play-large', // The large play button in the center
         'play', // Play/pause playback
         'progress', // The progress bar and scrubber for playback and buffering
@@ -42,10 +40,9 @@ document.addEventListener('DOMContentLoaded', () => {
         'mute', // Toggle mute
         'volume', // Volume control
         'fullscreen', // Toggle fullscreen
-      ],
-    } 
+    ];
 
-    const player = new Plyr('#player', {options});
+    const player = new Plyr('#player', {controls});
 });
 
 // SLIDER
