@@ -43,15 +43,16 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     const player = new Plyr('#player', {controls});
+
 });
 
 // SLIDER
 var swiper = new Swiper('.swiper-container', {
     slidesPerView: 1,
     spaceBetween: 16,
-    // autoplay: {
-    //   delay: 10000,
-    // },
+    autoplay: {
+      delay: 3000,
+    },
     // init: false,
   
     pagination: {
@@ -74,11 +75,17 @@ var swiper = new Swiper('.swiper-container', {
       768: {
         slidesPerView: 3,
         spaceBetween: 16,
+        autoplay: {
+          delay: 10000,
+        },
       },
   
       992: {
         slidesPerView: 4,
         spaceBetween: 16,
+        autoplay: {
+          delay: 10000,
+        },
       },
   
     }
