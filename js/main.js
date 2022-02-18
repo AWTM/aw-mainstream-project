@@ -30,21 +30,24 @@ document.addEventListener("DOMContentLoaded", function(){
 
 /* End Navabar autohide */
 
-document.addEventListener('DOMContentLoaded', () => {
-    const controls = [
-        'play-large', // The large play button in the center
-        'play', // Play/pause playback
-        'progress', // The progress bar and scrubber for playback and buffering
-        'current-time', // The current time of playback
-        'duration', // The full duration of the media
-        'mute', // Toggle mute
-        'volume', // Volume control
-        'fullscreen', // Toggle fullscreen
-    ];
 
-    const player = new Plyr('#player', {controls});
+// Plyr player
+// document.addEventListener('DOMContentLoaded', () => {
+//     const controls = [
+//         'play-large', // The large play button in the center
+//         'play', // Play/pause playback
+//         'progress', // The progress bar and scrubber for playback and buffering
+//         'current-time', // The current time of playback
+//         'duration', // The full duration of the media
+//         'mute', // Toggle mute
+//         'volume', // Volume control
+//         'fullscreen', // Toggle fullscreen
+//     ];
 
-});
+//     const player = new Plyr('#player', {controls});
+
+// });
+/* End Plyr player */
 
 // SLIDER
 var swiper = new Swiper('.swiper-container', {
